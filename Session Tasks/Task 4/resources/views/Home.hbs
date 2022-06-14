@@ -1,0 +1,28 @@
+{{>header}}
+{{>navbar}}
+
+{{!-- <h3>{{name}}</h3> --}}
+<section class="container my-5">
+    <h3 class="text-center text-primary">All Posts</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+                <tr>
+                    <td>{{this.id}}</td>
+                     <td>{{this.title}}</td>
+                     <td>
+                         <a href="/single/{{this.id}}"  class="btn btn-primary">Show</a>
+                         <a href="/edit/{{this.id}}"  class="btn btn-warning">Edit</a>
+                         <a href="/delete/{{this.id}}"  class="btn btn-danger">Delete</a>
+                     </td>
+                </tr>
+            {{/each}}
+        </tbody>
+{{>footer}}
