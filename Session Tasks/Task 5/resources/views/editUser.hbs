@@ -1,0 +1,20 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-5">
+    <form method="post">
+        <div class="mb-3">
+            <input placeholder="name" name="name" class="form-control" value="{{user.name}}">
+        </div>
+        <div class="mb-3">
+            <input placeholder="age" name="age" class="form-control"
+             value="{{user.age}}">
+        </div>
+        <div class="mb-3">
+            <input placeholder="status" name="status" class="form-control" value="{{user.status}}">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">Edit</button>
+        </div>
+    </form>
+</section>
+{{>footer}}

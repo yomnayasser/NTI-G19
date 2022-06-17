@@ -1,0 +1,15 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-5">
+    {{#if user}}
+    <h4 class="">{{user.name}}</h4>
+    <p>{{user.age}}</p>
+    <p>{{user.status}}</p>
+    {{else}}
+    <div class="alert alert-danger text-center">
+        <p>Invalid user data</p>
+        <a href="/" class="btn btn-primary">Back Home</a>    
+    </div>
+    {{/if}}
+</section>
+{{>footer}}
