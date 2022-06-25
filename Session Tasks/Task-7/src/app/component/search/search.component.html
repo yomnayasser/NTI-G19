@@ -1,0 +1,17 @@
+
+<div class="container">
+    <!-- <form action="" > -->
+    <div class="row mt-4">
+        <div class="col-4">
+
+<input type="email" class="form-control mt-3" 
+placeholder="enter name" (input)="filerArray(nameInput)" #nameInput> 
+
+<div class="col-4" *ngFor="let search of arraySearch">
+    <h4 class="text-danger">{{search.name}}</h4>
+</div>
+
+</div>
+    </div>
+</div>
+.
